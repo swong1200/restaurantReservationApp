@@ -1,0 +1,32 @@
+
+/* Tables Screen */
+.card {
+	margin-bottom: 20px;
+}
+#tables .card-content, #waiting .card-content {
+	padding: 20px;
+}
+.table-block {
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: 10px;
+	padding: 15px;
+}
+form {
+	margin: 20px;
+	padding: 10px;
+}
+form .label {
+	width: 100%;
+}
+form input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+svg {
+	margin-top: -7px;
+    margin-right: 9px;
+}
+#links a {
+	margin-right: 15px;
+	padding-bottom: 200px;
+}
