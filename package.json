@@ -1,0 +1,23 @@
+{
+  "name": "restaurantreservationapp",
+  "version": "1.0.0",
+  "description": "Reservation making app for a restaurant",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swong1200/restaurantReservationApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swong1200/restaurantReservationApp/issues"
+  },
+  "homepage": "https://github.com/swong1200/restaurantReservationApp#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}
