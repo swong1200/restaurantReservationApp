@@ -12,6 +12,9 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Displays CSS
+app.use(express.static("public"))
+
 // Tables to be reserved; max length is 5
 const tables = [];
 // Waitlist if tables are full
@@ -19,16 +22,17 @@ const waitlist = [];
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function (req, res) {
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "public/index.html"));
 });
 // Sends user to tables page
 app.get("/table", function (req, res) {
-  res.sendFile(path.join(__dirname, "table.html"));
+  res.sendFile(path.join(__dirname, "public/table.html"));
 });
 // Sends user to reserve page
 app.get("/reserve", function (req, res) {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "public/reserve.html"));
 });
+
 
 // Displays all tables
 app.get("/api/tables", function (req, res) {
